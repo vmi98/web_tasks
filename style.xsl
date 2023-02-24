@@ -2,14 +2,18 @@
   <xsl:output method="xml" encoding="UTF-8"/>
 
 <xsl:template match="/">
+   <html>
    <head>
    <script type="text/javascript" async
 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeXMML-AM_CHTML">
     </script>
     </head>
+<body>
     <math xmlns="http://www.w3.org/1998/Math/MathML">
         <xsl:apply-templates/>
     </math>
+</body>
+    </html>
 </xsl:template>
 
 <xsl:template match="корень">
